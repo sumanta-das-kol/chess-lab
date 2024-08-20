@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mind Rocket Chess Lab - Puzzle Creation Board</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+
+    <!-- === webfont=== -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
+   <!--Font awesome css-->
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <!--UI css-->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="../css/venobox.css">
+    <!--Owl Carousel css-->
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+    <link href="../css/owl.theme.css" rel="stylesheet">
+    <!--Animate css-->
+    <link href="../css/animate.css" rel="stylesheet">
+     <!--Main Stylesheet -->
+    <link href="../style.css" rel="stylesheet">
+    <!--Responsive Stylesheet -->
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css" >
+	<!-- href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous"> -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="overscroll-behavior: contain;">
+<!--
+<div id="special2" style="background-color: #808080;">
+   <a href="../index.php" title="Home Page">
+      <img src="../img/logo2.png" alt="Home Page" style="position: fixed; bottom: 10px; left: 0px; border-radius: 0px; height: 75px; width: 75px; z-index: 9999;" />
+   </a>
+</div>
+-->
+<div class="preloader"></div>
+
+
+<!--Text breadcrumb area start-->
+<section class="text-bread-crumb d-flex align-items-center" style="padding: 0px;">
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-5">
+               <br><h2>Mind Rocket Chess Class </h2>
+               <div class="bread-crumb-line">www.mindrocket.in</div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+ <!--Text breadcrumb area start-->
+  <section class="kindergarten-top-content wow fadeInUp" data-wow-delay=".3s" 
+    style="padding-top: 10px;padding-left: -50px;background-image: url(../img/bg/Kindergarten-top-con-chess.jpg);">
+     <div class="container-fluid">
+         <div class="row justify-content-center">
+             <div class="col-md-5">
+                 <div class="kin-top-con">
+                    <!--- Begin Example HTML ------------------------------------------------------>
+						<div id="board2" style="width: 350px"></div>
+						<button id="startBtn">Start Position</button>
+						<button id="clearBtn">Clear Board</button>
+						<!--- End Example HTML -------------------------------------------------------->
+						<script src="js/jquery-3.4.1.min.js"></script>
+						<script src="js/chessboard-1.0.0.min.js"></script>
+						<!--<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>-->
+						<script>
+						// --- Begin Example JS --------------------------------------------------------
+						var board2 = Chessboard('board2', {
+						  draggable: true,
+						  dropOffBoard: 'trash',
+						  sparePieces: true
+						})
+
+						$('#startBtn').on('click', board2.start)
+						$('#clearBtn').on('click', board2.clear)
+						// --- End Example JS -------------
+						</script>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+    <!-- === jqyery === -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- === bootsrap-min === -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- === Scroll up min js === -->
+    <script src="../js/jquery.scrollUp.min.js"></script> 
+    <!-- === Price slider js === -->
+    <script src="../js/jquery-price-slider.js"></script>
+    <!-- === Counter up js === -->
+    <script src="../js/jquery.counterup.min.js"></script>
+    <!-- === Waypoint js === -->
+    <script src="../js/jquery.waypoints.js"></script>
+    <!-- === Venobox js === -->
+    <script src="../js/venobox.min.js"></script>
+    <!-- === ZOOM  js === -->
+    <script src="../js/jquery.elevatezoom.js"></script>
+    <!-- === filterizr filter  js === -->
+    <script src="../js/jquery.filterizr.min.js"></script>
+    <!-- === Owl Carousel js === -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- === WOW js === -->
+    <script src="../js/wow.js"></script>
+    <!-- === Coundown js === -->
+    <script src="../js/jquery.countdown.min.js"></script>
+    <!-- === Image loaded js === -->
+    <script src="../js/imageloaded.pkgd.min.js"></script>
+    <!-- === Mailchimp integration js === -->
+    <script src="../js/mailchimp.js"></script>
+     <!-- === Mobile menu  js === -->
+    <script src="../js/mobile-menu.js"></script>
+    <!-- === Main  js === -->
+    <script src="../js/main.js"></script>
+   <script type="text/javascript">
+    window.onbeforeunload = function() {
+        return "you sure you want to leave?";
+    }
+</script>
+      
+  
+</body>
+
+</html>

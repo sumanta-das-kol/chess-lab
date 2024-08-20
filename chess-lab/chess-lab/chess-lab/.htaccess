@@ -1,0 +1,7 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^chess\.mindrocket\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.chess\.mindrocket\.in$
+RewriteRule ^/?$ "https\:\/\/mindrocket\.in\/chess\-lab" [R=301,L]
